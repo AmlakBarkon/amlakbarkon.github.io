@@ -1,0 +1,23 @@
+{
+  "name": "mdb-free_4.19.1",
+  "version": "1.0.0",
+  "description": "This is a website for the fictional campsites review site NuCamp.",
+  "main": "index.html",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amlak",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^4.5.0",
+    "font-awesome-animation": "^0.2.1",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
