@@ -941,7 +941,7 @@ header,
 
         <hr class="my-5">
 <!--  adding map with marker -->
-<div id="map"></div>
+
 <!-- end map -->
 
         <!--Section: Contact-->
@@ -1013,12 +1013,16 @@ header,
 
                     </div>
                     <!--Grid row-->
-               3200 Atlanta Silverbacks Way, Atlanta, GA 30340
+                    <a href="https://www.google.com/maps/place/Silverbacks+Park/@33.8962689,-84.238416,15z/data=!4m5!3m4!1s0x88f5a776adecab27:0x3fa1b0ad68efb8b6!8m2!3d33.8919906!4d-84.254837"><address>Location 
+                        3200 Atlanta Silverbacks Way, Atlanta, GA 30340 </address>
+                  
+              
                     <!--Google map-->
-                    <div  id="map-container-google-1" class="z-depth-1-half map-container" style="height:500px">
+                    <div class="mb-4" id="map-container-google-1" class="z-depth-1-half map-container" style="height:500px">
                         <iframe class="w-100 h-100" src="https://maps.google.com/maps?q=atlanta&silverback&park&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="3"
                           style="border:4" allowfullscreen></iframe>
-                      </div>
+                      </div></a>
+                  
 
                 </div>
                 <!--Grid column-->
@@ -1083,12 +1087,30 @@ header,
     <div class="container ">
         <h1 class="text-center" > Our Training Adopt from these vedios</h1>
         <p  class="text-center">Watch them before attending</p>
-        <iframe  class="embed-responsive-item" src="http://youtube.com/embed?v=bzjVnj8Gms4&list=PLnkMqAYu3cpQPjphyno-n0Pn6CIBxVlGf"  allowfullscreen></iframe>
-        <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/qCQP_Z7MIK8" allowfullscreen></iframe>
-        <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/lD8iR1oMBPg"  allowfullscreen></iframe>
-        <iframe  class="align-items-center" src="https://www.youtube.com/embed/X73BuOMt7ho?start=56"  allowfullscreen></iframe>
-        <iframe  class="align-items-center"  src="https://www.youtube.com/embed/tTJ1_CftK3o?start=56" allowfullscreen></iframe>
-        <iframe  src="https://www.youtube.com/embed/vryRHrJlpf0?start=56"  allowfullscreen></iframe>
+        <div class="row ">
+            <div class="col d-flex  flex-wrap justify-content-center">
+                <div class="mb-3 ml-3">
+                     <iframe  class="embed-responsive-item" src="http://youtube.com/embed?v=bzjVnj8Gms4&list=PLnkMqAYu3cpQPjphyno-n0Pn6CIBxVlGf"  allowfullscreen></iframe>
+                </div>
+                <div class="mb-3 ml-3">
+                     <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/qCQP_Z7MIK8" allowfullscreen></iframe>
+                </div>
+                <div class="mb-3 ml-3">
+                   <iframe  class="embed-responsive-item d-none d-sm-block" src="https://www.youtube.com/embed/lD8iR1oMBPg"  allowfullscreen></iframe> 
+                </div>
+                <div class="mb-3 ml-3">
+                       <iframe  class=" d-none d-sm-block" src="https://www.youtube.com/embed/X73BuOMt7ho?start=56"  allowfullscreen></iframe>
+                </div>
+                <div class="mb-3 ml-3">
+                     <iframe  class="d-none d-sm-block"  src="https://www.youtube.com/embed/tTJ1_CftK3o?start=56" allowfullscreen></iframe>
+                </div>
+               <div class="mb-3 ml-3">
+                   <iframe   src="https://www.youtube.com/embed/vryRHrJlpf0?start=56"  allowfullscreen></iframe>
+               </div>
+                
+            </div>
+        </div>
+        
       </div>
     <!--Footer Links-->
     <div class="container mt-5 mb-4 text-center">
@@ -1180,10 +1202,10 @@ $('.carousel').carousel({
  })
  function initMap() {
   // The location of Uluru
-  var uluru = {lat: 25.344, lng: 131.036};
+  var uluru = {lat: 33.8962689, lng: -84.238416};
   // The map, centered at Uluru
   var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 4, center: uluru});
+      document.getElementById('map'), {zoom: 12, center: uluru});
   // The marker, positioned at Uluru
   var marker = new google.maps.Marker({position: uluru, map: map});
 }
