@@ -8,6 +8,7 @@
   <!-- MDB icon -->
   <!-- <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon"> -->
   <!-- Font Awesome -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="font-awesome-animation.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
@@ -20,6 +21,10 @@
   <!-- Your custom styles (optional) -->
   <link rel="stylesheet" href="css/style.css">
   <style>
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
 [aos="fade"] {
   opacity: 0;
   transition-property: opacity;
@@ -156,12 +161,10 @@ header,
 
                     <div class="col-md-10">
 
-                        <!-- Heading -->
-                        <h2  data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="3000" class="display-4 font-weight-bold white-text pt-5 mb-2" style="letter-spacing: 1rem;">NuSoccer</h2>
-
-                        <!-- Divider -->
-                        <hr class="hr-light">
-
+                        <!-- Heading --> 
+                        
+                        <h2  data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="3000" class="logName display-4 font-weight-bold white-text pt-5 mb-2" style="letter-spacing: 1rem;">NuSoccer</h2>
+                      
                         <!-- Description -->
                         <h6 data-aos="flip-down" class="white-text my-4">Your kids next</h6>
                         <a type="button" class="btn btn-outline-white"   data-toggle="modal" data-target="#greeting">Open Greeting</a>
@@ -357,10 +360,12 @@ header,
                     <p>We believe that soccer is a powerful vehicle for positively impacting youth. Through our partnership with the U.S. Soccer Foundation, we aim to impact children
                        who live in underserved communities through quality soccer programs that support their physical and personal development.</p>
                     <div class="row">
-                        <div class="col">
+                        <div class="col-12 col-sm-6 mb-5">
+                            <h4>Maryland 2001 Champion</h4>
                             <img class="w-100 h-100" src="img/overlays/amlak2001.jpg" alt="">
                         </div>
-                        <div class="col">
+                        <div class="col col-sm-6">
+                            <h4>Maryland Team 2004 Champion</h4>
                             <img class="w-100 h-100" src="img/overlays/firstjera.jpg" alt="">
                         </div>
                     </div>
@@ -439,8 +444,9 @@ header,
 
                 <!--Grid column-->
                 <div class="col-md-4 mb-5 ">
-                   
-                    <i data-aos="flip-left" data-aos-delay="500" data-aos-easing="ease-in-sine" data-aos-duration="1000"  style="color:tomato" class="fas fa-snowboarding fa-flip-horizontal  fa-4x"></i>
+                    <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_s0e2CP.json"  background="transparent"  speed=".5"  style="width: 300px; height: 200px;"  loop  autoplay></lottie-player>
+
+                    <!-- <i data-aos="flip-left" data-aos-delay="500" data-aos-easing="ease-in-sine" data-aos-duration="1000"  style="color:tomato" class="fas fa-snowboarding fa-flip-horizontal  fa-4x"></i> -->
                     <h4 data-aos="slide-left" data-aos-duration="10000" class="my-4 font-weight-bold">Real Fact</h4>
                     <p data-aos="slide-right" data-aos-duration="10000" class="dark-text">What many adults have forgotten from their own youth is that children of this age can only focus on a
                         limited number of tasks at one time. It takes the full attention capacity of a U-6 player to control the ball
@@ -454,7 +460,7 @@ header,
                     <div class="container">
                         <div class="row">
                             <div class="col-12 align-items-center">
-                                <lottie-player src="https://assets3.lottiefiles.com/temp/lf20_HZj4yl.json"  background="transparent"  speed=".5"  style="width: 300px; height: 200px;"  loop  autoplay></lottie-player>
+                                <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_bD8Yze.json"  background="transparent"  speed=".5"  style="width: 300px; height: 200px;"  loop  autoplay></lottie-player>
                             </div>
                             <div class="col">
                                 <h4 class="font-weight-bold">Health</h4>
@@ -934,6 +940,9 @@ header,
         <!--Section: Gallery-->
 
         <hr class="my-5">
+<!--  adding map with marker -->
+<div id="map"></div>
+<!-- end map -->
 
         <!--Section: Contact-->
         <section id="contact">
@@ -1034,9 +1043,9 @@ header,
             <div class="row py-4 d-flex align-items-center">
 
                 <!--Grid column-->
-                <div class="col-md-12 col-lg-12 text-center  text-uppercase font-weight-bold text-md-right m-4 mb-md-0">
+                <div class="col-md-12 col-lg-12 align-text-center  text-uppercase font-weight-bold text-md-right m-4 mb-md-0">
                     <h6 class=" white-text">Get connected with us on social networks!</h6>
-                    <hr class="deep-purple accent-6 mb-4 mt-0 d-inline-block mx-auto" style="width: 360px;">
+                    <hr class="  deep-purple accent-6 mb-4 mt-0 d-inline-block mx-auto" style="width: 360px;">
                 </div>
                 <!--Grid column-->
 
@@ -1070,8 +1079,16 @@ header,
         </div>
     </div>
     <!-- Social buttons -->
-      <div class="embed-responsive embed-responsive-16by9 divimgsize">
-          <iframe class="embed-responsive-item" src="http://youtube.com/embed?v=bzjVnj8Gms4&list=PLnkMqAYu3cpQPjphyno-n0Pn6CIBxVlGf"  allowfullscreen></iframe>
+    
+    <div class="container ">
+        <h1 class="text-center" > Our Training Adopt from these vedios</h1>
+        <p  class="text-center">Watch them before attending</p>
+        <iframe  class="embed-responsive-item" src="http://youtube.com/embed?v=bzjVnj8Gms4&list=PLnkMqAYu3cpQPjphyno-n0Pn6CIBxVlGf"  allowfullscreen></iframe>
+        <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/qCQP_Z7MIK8" allowfullscreen></iframe>
+        <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/lD8iR1oMBPg"  allowfullscreen></iframe>
+        <iframe  class="align-items-center" src="https://www.youtube.com/embed/X73BuOMt7ho?start=56"  allowfullscreen></iframe>
+        <iframe  class="align-items-center"  src="https://www.youtube.com/embed/tTJ1_CftK3o?start=56" allowfullscreen></iframe>
+        <iframe  src="https://www.youtube.com/embed/vryRHrJlpf0?start=56"  allowfullscreen></iframe>
       </div>
     <!--Footer Links-->
     <div class="container mt-5 mb-4 text-center">
@@ -1146,7 +1163,7 @@ header,
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script type="text/javascript">
   AOS.init({
-      delay: 1000
+      delay: 500
   });
 $(document).ready(function(){
     setTimeout(function(){
@@ -1154,14 +1171,25 @@ $(document).ready(function(){
     },0);
     setTimeout(function(){
         $("#greeting").modal("hide");
-    },5000)
+    },2000)
     
 })
 
 $('.carousel').carousel({
             interval: 1000,
  })
+ function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 25.344, lng: 131.036};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
  </script>
-
+<script defer
+src="https://maps.googleapis.com/maps/api/js?AIzaSyAehe4cgbE1K7U4zieztK05SaGoQYNPQEE&callback=initMap">
+</script>
 </body>
 </html>

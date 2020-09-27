@@ -215,3 +215,13 @@ body{
 .hoverme:hover {
   color: red;
 }
+.logName::first-letter {
+  color: red;
+  font-size: 56px;
+
+}
+.logName:nth-child(3){
+  color: red;
+  font-size: 56px;
+
+}
