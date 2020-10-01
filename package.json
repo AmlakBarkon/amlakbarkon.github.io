@@ -17,6 +17,7 @@
     "aos": "^2.3.4",
     "bootstrap": "^4.5.0",
     "font-awesome-animation": "^0.2.1",
+    "jarallax": "^1.12.4",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
   }
